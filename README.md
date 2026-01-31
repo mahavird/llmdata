@@ -23,27 +23,14 @@ This repository currently focuses on **Step 1: small-sample download and verific
 
 ## Repository structure
 
+```text
 .
 ├── configs/
-│ └── sample.toml # dataset configs + sample sizes
+│   └── sample.toml        # dataset configs + sample sizes
 ├── src/
-│ ├── sample_download.py # downloads small samples
-│ └── sample_verify.py # verifies downloaded samples
-├── out/ # generated data (gitignored)
+│   ├── sample_download.py # downloads small samples
+│   └── sample_verify.py   # verifies downloaded samples
+├── out/                   # generated data (gitignored)
 ├── .gitignore
+├── requirements.txt
 └── README.md
-
-
-
----
-
-## Step 1: Sample download
-
-Edit `configs/sample.toml` to control:
-- number of records per dataset
-- dataset splits / languages
-- whether to include Dolma shards
-
-Run:
-```bash
-python src/sample_download.py
